@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>This Fox Meows!</title>
+        <meta property="og:title" content="This Fox Meows!">
+        <meta property="og:site_name" content="This Fox Meows!">
+        <meta property="og:url" content="https://www.thisfoxmeows.com">
+        <meta property="og:description" content="This Fox Meows!">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://www.thisfoxmeows.com/img/fox.svg">
+        <link rel="icon" type="image/x-icon" href="img/fox.svg">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+        <style>
+            h1 {
+                font-family: Pacifico, sans-serif;
+                font-size: 4em;
+                color: #3eb5f1;
+                margin: 0;
+            }
+
+            h2 {
+                font-weight: 300;
+                font-family: sans-serif;
+            }
+
+            .centered {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            }
+
+            #fopks {
+                width: 85%;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            function playMeow() {
+                new Audio('audio/meow.mp3').play();
+            }
+        </script>
+        <div class="centered">
+            <img id="fopks" alt="a cartoon-ish fox looking over its shoulder at the viewer" src="./img/fox.svg" onclick="playMeow()">
+        </div>
+    </body>
+</html>
